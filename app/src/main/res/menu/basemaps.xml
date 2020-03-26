@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_satellite"
+        android:title="Satellite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item_streets"
+        android:title="Streets"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item_topo"
+        android:title="Topography"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item_hybrid"
+        android:title="Hybrid"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item_natgeo"
+        android:title="NatGeo"
+        app:showAsAction="ifRoom" />
+
+</menu>

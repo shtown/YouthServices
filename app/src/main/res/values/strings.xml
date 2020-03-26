@@ -1,0 +1,61 @@
+<resources xmlns:tel="http://schemas.android.com/tools">
+    <string name="app_name">Youth Services</string>
+    <string name="hotline_info">Hotline Info</string>
+    <string name="calendar_info">Calendar Info</string>
+    <string name="show_subtitle">Show</string>
+
+    <string-array name="hotlines_array">
+        <item>Response of Suffolk County (crisis counseling and referrrals)\n\tHotline: <a href="tel:6317517500">631-751-7500</a>\n\tHear2Help (online): <a href="http://www.responsehotline.org">www.responsehotline.org</a>\n\tConexion (Spanish): <a href="tel:6317517423">631-751-7423</a></item>
+        <item>Crisis Text Line: <a href="sms:">Send to 741741</a></item>
+        <item>Lifeline (National): <a href="tel:800273TALK">800-273-TALK</a>, in Spanish: <a href="tel:8886289454">888-628-9454</a> (suicide hotline)</item>
+        <item>NYS Child Abuse Reporting Hotline: <a href="tel:8003423720">800-342-3720</a> (reporting suspected child abuse and/or neglect</item>
+        <item>Suffolk County Substance Abuse Hotline: <a href="tel:6319791700">631-979-1700</a>  (for persons struggling with addiction or know someone who is)</item>
+        <item>Alcoholics Anonymous Suffolk County Hotline: <a href="tel:6316691124">631-669-1124</a></item>
+        <item>Suffolk County Emergency Housing/Food: <a href="tel:6318549547">631-854-9547</a>, after hours <a href="tel:6318549100">631-854-9100</a></item>
+        <item>National Runaway Hotline: <a href="tel:8009999999">800-999-9999</a></item>
+    </string-array>
+
+    <string-array name="calendar_array">
+        <item><a href="http://sagharboronline.com/hamptons-events/">Sag Harbor Online</a></item>
+        <item><a href="http://www.27east.com/hamptons-events-calendar/">27 East</a></item>
+        <!--item><a href="http://hamptons.macaronikid.com/calendar/">Macaroni Kid</a></item>
+        <item><a href="http://www.hamptons.com/calendar">Hamptons.com</a></item>
+        <item><a href="https://mommypoppins.com/events?area%5B%5D=116">Mommy Poppins</a></item>
+        <item><a href="http://www.sagharborkids.org"></a>Sag Harbor For Kids</item>
+        <item><a href="http://eastendlocal.com/events/">East End Local</a></item>
+        <item><a href="http://events.danspapers.com/events/">Dan\'s Papers</a></item>
+        <item><a href="http://www.longislandbrowser.com/community/events/">Long Island Browser</a></item>
+        <item><a href="http://patch.com/new-york/westhampton-hamptonbays/calendar">Patch</a></item>
+        <item><a href="http://www.newsday.com/entertainment/long-island-events">Newsday</a></item-->
+    </string-array>
+
+    <string-array name="services_array">
+        <item>All Services</item>
+        <item>Cultural</item>
+        <item>Recreation</item>
+        <item>Volunteer</item>
+        <item>Religious</item>
+        <item>Employment</item>
+        <item>Education/Tutoring</item>
+        <item>Domestic Violence</item>
+        <item>Child Abuse</item>
+        <item>Substance Abuse</item>
+        <item>Mental Health</item>
+        <item>Adolescent Health</item>
+        <item>Daycare</item>
+    </string-array>
+
+    <string-array name="town_array">
+        <item>All Towns</item>
+        <item>East Hampton</item>
+        <item>Riverhead</item>
+        <item>Shelter Island</item>
+        <item>Southampton</item>
+        <item>Southold</item>
+    </string-array>
+
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$s facility</item>
+        <item quantity="other">%1$s facilities</item>
+    </plurals>
+</resources>

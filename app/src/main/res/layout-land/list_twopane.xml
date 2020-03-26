@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="@string/hotline_info"
+            android:id="@+id/hotlineButton"
+            android:background="#ff6600"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="@string/calendar_info"
+            android:id="@+id/calendarButton"
+            android:background="#1ec45b"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Service: "
+            android:id="@+id/spinTextServices"
+            android:layout_centerVertical="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#4c6175"
+            android:autoText="false"
+            android:textColor="#efe1e1"
+            android:textSize="16dp"/>
+
+        <Spinner
+            android:id="@+id/services_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/spinTextServices"
+            android:dropDownSelector="@android:drawable/btn_dialog"
+            android:background="#87cefa"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Town: "
+            android:id="@+id/spinTextTowns"
+            android:layout_centerVertical="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#4c6175"
+            android:autoText="false"
+            android:textColor="#efe1e1"
+            android:textSize="16dp"/>
+
+        <Spinner
+            android:id="@+id/towns_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/spinTextTowns"
+            android:dropDownSelector="@android:drawable/btn_dialog"
+            android:background="#66ffff"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ys_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c9c8ec"
+        android:foreground="#d9b1b1"/>
+
+</LinearLayout>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="@string/hotline_info"
+            android:id="@+id/hotlineButton"
+            android:background="#ff6600"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="@string/calendar_info"
+            android:id="@+id/calendarButton"
+            android:background="#1ec45b"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4c5198"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/services_spinner"
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"
+            android:dropDownSelector="@android:drawable/btn_dialog"
+            android:background="#87cefa"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Spinner
+            android:id="@+id/towns_spinner"
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:dropDownSelector="@android:drawable/btn_dialog"
+            android:background="#66ffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/services_spinner"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ys_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:background="#c9c8ec"
+        android:foreground="#d9b1b1"/>
+
+</LinearLayout>
+
+
+

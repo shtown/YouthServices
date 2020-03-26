@@ -1,0 +1,93 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="gov.townofsouthamptonny.android.youthservices"
+4    android:versionCode="3"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:5:5-78
+12        android:glEsVersion="0x00020000"
+12-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:5:19-51
+13        android:required="true" />
+13-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:5:52-75
+14
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:7:5-81
+15-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:8:5-79
+16-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:8:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:9:5-81
+17-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:9:22-78
+18    <uses-permission android:name="android.permission.SEND_SMS" />
+18-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:10:5-67
+18-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:10:22-64
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:11:5-67
+19-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:11:22-64
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:20:5-78
+22-->[com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:20:22-76
+23
+24    <application
+24-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:13:5-34:19
+25        android:name="android.support.multidex.MultiDexApplication"
+25-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:19:9-68
+26        android:allowBackup="true"
+26-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:14:9-35
+27        android:debuggable="true"
+28        android:icon="@mipmap/appicon"
+28-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:15:9-39
+29        android:label="@string/app_name"
+29-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:16:9-41
+30        android:supportsRtl="true"
+30-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:17:9-35
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:18:9-40
+33        <meta-data
+33-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:20:9-22:70
+34            android:name="gov.townofsouthamptonny.android.youthservices."
+34-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:21:13-74
+35            android:value="AIzaSyDdniIKAiV0VoSeU5N4QRo4-meiGUk5aXY" />
+35-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:22:13-68
+36
+37        <activity android:name="gov.townofsouthamptonny.android.youthservices.YouthServicesListActivity" >
+37-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:23:9-28:20
+37-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:23:19-60
+38            <intent-filter>
+38-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:24:13-27:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:25:17-68
+39-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:25:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:26:17-76
+41-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:26:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity android:name="gov.townofsouthamptonny.android.youthservices.YouthServicesPagerActivity" >
+44-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:29:9-32:20
+44-->E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:29:19-61
+45            android:label="@string/app_name"
+46            android:parentActivityName=".YouthServicesListActivity"
+47        </activity>
+48
+49        <meta-data
+49-->[com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:21:9-23:69
+50            android:name="com.google.android.gms.version"
+50-->[com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:22:13-58
+51            android:value="@integer/google_play_services_version" />
+51-->[com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:23:13-66
+52    </application>
+53
+54</manifest>
