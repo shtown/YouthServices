@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Development\\Android\\YouthServices\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+            "outputFile": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\7189ed080d110a1ad396c09c35ab832a\\appcompat-v7-23.3.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,166,274,397,512,623,710,826,956,1039,1119,1215,1325,1437,1540,1651,1758,1860,1982,2081",
-                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
-                        "endOffsets": "161,269,392,507,618,705,821,951,1034,1114,1210,1320,1432,1535,1646,1753,1855,1977,2076,2177"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,52",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,324,447,562,673,760,876,1006,1089,1169,1265,1375,1487,1590,1701,1808,1910,2032,7295",
-                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
-                        "endOffsets": "211,319,442,557,668,755,871,1001,1084,1164,1260,1370,1482,1585,1696,1803,1905,2027,2126,7391"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\79e49248803a4c800b7d7bb93077a1a1\\play-services-location-8.4.0\\res\\values-fr-rCA\\location_strings.xml",
-                    "from": {
-                        "startLines": "6,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "330,230",
-                        "endColumns": "110,99",
-                        "endOffsets": "436,325"
-                    },
-                    "to": {
-                        "startLines": "50,51",
-                        "startColumns": "4,4",
-                        "startOffsets": "7084,7195",
-                        "endColumns": "110,99",
-                        "endOffsets": "7190,7290"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\87940978aaaa17b72cab2845bb1c639c\\play-services-base-8.4.0\\res\\values-fr-rCA\\base_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/res/values-fr-rCA/base_strings.xml",
                     "from": {
                         "startLines": "24,10,9,8,7,5,6,4,19,18,17,16,3,28,27,26,25,21,20,22,12,11,15,14,13,23,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\3ead6311fcedafa8aa1a99fa9b464a2c\\play-services-basement-8.4.0\\res\\values-fr-rCA\\common_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/res/values-fr-rCA/values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,166,274,397,512,623,710,826,956,1039,1119,1215,1325,1437,1540,1651,1758,1860,1982,2081",
+                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
+                        "endOffsets": "161,269,392,507,618,705,821,951,1034,1114,1210,1320,1432,1535,1646,1753,1855,1977,2076,2177"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,52",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,324,447,562,673,760,876,1006,1089,1169,1265,1375,1487,1590,1701,1808,1910,2032,7295",
+                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
+                        "endOffsets": "211,319,442,557,668,755,871,1001,1084,1164,1260,1370,1482,1585,1696,1803,1905,2027,2126,7391"
+                    }
+                },
+                {
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/res/values-fr-rCA/location_strings.xml",
+                    "from": {
+                        "startLines": "6,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "330,230",
+                        "endColumns": "110,99",
+                        "endOffsets": "436,325"
+                    },
+                    "to": {
+                        "startLines": "50,51",
+                        "startColumns": "4,4",
+                        "startOffsets": "7084,7195",
+                        "endColumns": "110,99",
+                        "endOffsets": "7190,7290"
+                    }
+                },
+                {
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/res/values-fr-rCA/common_strings.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",

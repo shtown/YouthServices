@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Development\\Android\\YouthServices\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ja\\values-ja.xml",
+            "outputFile": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\3ead6311fcedafa8aa1a99fa9b464a2c\\play-services-basement-8.4.0\\res\\values-ja\\common_strings.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "170",
-                        "endColumns": "200",
-                        "endOffsets": "366"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4382",
-                        "endColumns": "196",
-                        "endOffsets": "4574"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\7189ed080d110a1ad396c09c35ab832a\\appcompat-v7-23.3.0\\res\\values-ja\\values-ja.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/res/values-ja/values-ja.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\79e49248803a4c800b7d7bb93077a1a1\\play-services-location-8.4.0\\res\\values-ja\\location_strings.xml",
-                    "from": {
-                        "startLines": "6,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "322,230",
-                        "endColumns": "96,91",
-                        "endOffsets": "414,317"
-                    },
-                    "to": {
-                        "startLines": "50,51",
-                        "startColumns": "4,4",
-                        "startOffsets": "6024,6121",
-                        "endColumns": "96,91",
-                        "endOffsets": "6116,6208"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\87940978aaaa17b72cab2845bb1c639c\\play-services-base-8.4.0\\res\\values-ja\\base_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/res/values-ja/base_strings.xml",
                     "from": {
                         "startLines": "24,10,9,8,7,5,6,4,19,18,17,16,3,28,27,26,25,21,20,22,12,11,15,14,13,23,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +35,40 @@
                         "startOffsets": "1945,2144,2267,2433,2555,2678,2874,3069,3191,3339,3453,3596,3712,3841,3989,4111,4262,4579,4782,4904,5007,5171,5292,5471,5595,5745,5834,5923",
                         "endColumns": "198,122,165,121,122,195,194,121,147,113,142,115,128,147,121,150,119,202,121,102,163,120,178,123,149,88,88,100",
                         "endOffsets": "2139,2262,2428,2550,2673,2869,3064,3186,3334,3448,3591,3707,3836,3984,4106,4257,4377,4777,4899,5002,5166,5287,5466,5590,5740,5829,5918,6019"
+                    }
+                },
+                {
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/res/values-ja/common_strings.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "170",
+                        "endColumns": "200",
+                        "endOffsets": "366"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4382",
+                        "endColumns": "196",
+                        "endOffsets": "4574"
+                    }
+                },
+                {
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/res/values-ja/location_strings.xml",
+                    "from": {
+                        "startLines": "6,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "322,230",
+                        "endColumns": "96,91",
+                        "endOffsets": "414,317"
+                    },
+                    "to": {
+                        "startLines": "50,51",
+                        "startColumns": "4,4",
+                        "startOffsets": "6024,6121",
+                        "endColumns": "96,91",
+                        "endOffsets": "6116,6208"
                     }
                 }
             ]

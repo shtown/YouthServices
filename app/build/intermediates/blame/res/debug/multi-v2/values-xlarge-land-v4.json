@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Development\\Android\\YouthServices\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+            "outputFile": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\7189ed080d110a1ad396c09c35ab832a\\appcompat-v7-23.3.0\\res\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/res/values-xlarge-land-v4/values-xlarge-land-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

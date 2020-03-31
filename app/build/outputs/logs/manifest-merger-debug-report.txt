@@ -1,171 +1,171 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5a8cd89d192afa40a3f460d7d46570fc\multidex-1.0.2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7189ed080d110a1ad396c09c35ab832a\appcompat-v7-23.3.0\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:recyclerview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\a28408ff23bc3fe109afb8fcc3e44ad1\recyclerview-v7-23.3.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\2e8f3833497b78c9b9eb2a0e7cf9139d\cardview-v7-23.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\14034e99f66006cbadae1cc0aa59684c\arcgis-android-10.2.8-1\AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-location:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\79e49248803a4c800b7d7bb93077a1a1\play-services-location-8.4.0\AndroidManifest.xml:16:1-20:12
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e9f6f0708b72fcef32f9118d726c5d61\animated-vector-drawable-23.3.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5d3098429616b9fb43df7d5bb803f3b1\support-vector-drawable-23.3.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:16:1-28:12
-MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\87940978aaaa17b72cab2845bb1c639c\play-services-base-8.4.0\AndroidManifest.xml:16:1-19:12
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:16:1-26:12
-MERGED from [com.android.support:support-v4:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7f18f7cf54e35c11ca3a59b4d9099ff6\support-v4-23.3.0\AndroidManifest.xml:17:1-24:12
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5a8cd89d192afa40a3f460d7d46570fc/multidex-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a28408ff23bc3fe109afb8fcc3e44ad1/recyclerview-v7-23.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:16:1-20:12
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:16:1-28:12
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
 	package
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:11-66
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:11-66
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:2:1-36:12
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:3:11-69
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:3:5-63
 uses-feature#0x00020000
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:5:5-78
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:22:5-24:33
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:22:5-24:33
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:5:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:5:19-51
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:5:19-51
 	android:required
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:5:52-75
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:5:52-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:9:5-81
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.SEND_SMS
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:10:5-67
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:10:22-64
 uses-permission#android.permission.INTERNET
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:21:5-66
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:21:5-66
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:11:22-64
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:11:22-64
 application
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:13:5-34:19
-MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7189ed080d110a1ad396c09c35ab832a\appcompat-v7-23.3.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7189ed080d110a1ad396c09c35ab832a\appcompat-v7-23.3.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\2e8f3833497b78c9b9eb2a0e7cf9139d\cardview-v7-23.3.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\2e8f3833497b78c9b9eb2a0e7cf9139d\cardview-v7-23.3.0\AndroidManifest.xml:22:5-20
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\14034e99f66006cbadae1cc0aa59684c\arcgis-android-10.2.8-1\AndroidManifest.xml:11:5-20
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\14034e99f66006cbadae1cc0aa59684c\arcgis-android-10.2.8-1\AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.gms:play-services-location:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\79e49248803a4c800b7d7bb93077a1a1\play-services-location-8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-location:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\79e49248803a4c800b7d7bb93077a1a1\play-services-location-8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e9f6f0708b72fcef32f9118d726c5d61\animated-vector-drawable-23.3.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e9f6f0708b72fcef32f9118d726c5d61\animated-vector-drawable-23.3.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5d3098429616b9fb43df7d5bb803f3b1\support-vector-drawable-23.3.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5d3098429616b9fb43df7d5bb803f3b1\support-vector-drawable-23.3.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7f18f7cf54e35c11ca3a59b4d9099ff6\support-v4-23.3.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7f18f7cf54e35c11ca3a59b4d9099ff6\support-v4-23.3.0\AndroidManifest.xml:22:5-20
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:13:5-34:19
+MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:11:5-20
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:16:9-41
 	android:icon
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:15:9-39
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:15:9-39
 	android:allowBackup
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:18:9-40
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:19:9-68
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:19:9-68
 meta-data#gov.townofsouthamptonny.android.youthservices.
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:20:9-22:70
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:20:9-22:70
 	android:value
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:22:13-68
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:22:13-68
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:21:13-74
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:21:13-74
 activity#gov.townofsouthamptonny.android.youthservices.YouthServicesListActivity
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:23:9-28:20
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:23:9-28:20
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:23:19-60
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:23:19-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:24:13-27:29
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:25:17-68
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:25:17-68
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:26:17-76
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:26:17-76
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:26:27-74
 activity#gov.townofsouthamptonny.android.youthservices.YouthServicesPagerActivity
-ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:29:9-32:20
+ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:29:9-32:20
 	android:name
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml:29:19-61
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:29:19-61
 uses-sdk
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5a8cd89d192afa40a3f460d7d46570fc\multidex-1.0.2\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5a8cd89d192afa40a3f460d7d46570fc\multidex-1.0.2\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7189ed080d110a1ad396c09c35ab832a\appcompat-v7-23.3.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7189ed080d110a1ad396c09c35ab832a\appcompat-v7-23.3.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:recyclerview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\a28408ff23bc3fe109afb8fcc3e44ad1\recyclerview-v7-23.3.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\a28408ff23bc3fe109afb8fcc3e44ad1\recyclerview-v7-23.3.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\2e8f3833497b78c9b9eb2a0e7cf9139d\cardview-v7-23.3.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\2e8f3833497b78c9b9eb2a0e7cf9139d\cardview-v7-23.3.0\AndroidManifest.xml:20:5-43
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\14034e99f66006cbadae1cc0aa59684c\arcgis-android-10.2.8-1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\14034e99f66006cbadae1cc0aa59684c\arcgis-android-10.2.8-1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-location:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\79e49248803a4c800b7d7bb93077a1a1\play-services-location-8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-location:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\79e49248803a4c800b7d7bb93077a1a1\play-services-location-8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e9f6f0708b72fcef32f9118d726c5d61\animated-vector-drawable-23.3.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e9f6f0708b72fcef32f9118d726c5d61\animated-vector-drawable-23.3.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5d3098429616b9fb43df7d5bb803f3b1\support-vector-drawable-23.3.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-vector-drawable:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\5d3098429616b9fb43df7d5bb803f3b1\support-vector-drawable-23.3.0\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\87940978aaaa17b72cab2845bb1c639c\play-services-base-8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\87940978aaaa17b72cab2845bb1c639c\play-services-base-8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7f18f7cf54e35c11ca3a59b4d9099ff6\support-v4-23.3.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7f18f7cf54e35c11ca3a59b4d9099ff6\support-v4-23.3.0\AndroidManifest.xml:20:5-43
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.2] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5a8cd89d192afa40a3f460d7d46570fc/multidex-1.0.2/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5a8cd89d192afa40a3f460d7d46570fc/multidex-1.0.2/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a28408ff23bc3fe109afb8fcc3e44ad1/recyclerview-v7-23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a28408ff23bc3fe109afb8fcc3e44ad1/recyclerview-v7-23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:20:5-43
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.3.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\7189ed080d110a1ad396c09c35ab832a\appcompat-v7-23.3.0\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-		ADDED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Development\Android\YouthServices\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:20:5-78
+ADDED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\e447f3626b8428559b1205958bf5b49b\play-services-maps-8.4.0\AndroidManifest.xml:20:22-76
+		ADDED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:20:22-76
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\jdaly\.gradle\caches\transforms-2\files-2.1\3ead6311fcedafa8aa1a99fa9b464a2c\play-services-basement-8.4.0\AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:22:13-58

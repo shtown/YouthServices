@@ -1,44 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Development\\Android\\YouthServices\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ms-rMY\\values-ms-rMY.xml",
+            "outputFile": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms-rMY/values-ms-rMY.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\3ead6311fcedafa8aa1a99fa9b464a2c\\play-services-basement-8.4.0\\res\\values-ms-rMY\\common_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/res/values-ms-rMY/location_strings.xml",
                     "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "170",
-                        "endColumns": "264",
-                        "endOffsets": "430"
+                        "startLines": "6,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "324,230",
+                        "endColumns": "106,93",
+                        "endOffsets": "426,319"
                     },
                     "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4876",
-                        "endColumns": "260",
-                        "endOffsets": "5132"
+                        "startLines": "50,51",
+                        "startColumns": "4,4",
+                        "startOffsets": "6866,6973",
+                        "endColumns": "106,93",
+                        "endOffsets": "6968,7062"
                     }
                 },
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\7189ed080d110a1ad396c09c35ab832a\\appcompat-v7-23.3.0\\res\\values-ms-rMY\\values-ms-rMY.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,166,274,397,502,610,697,801,912,990,1069,1149,1261,1370,1467,1576,1679,1786,1908,2009",
-                        "endColumns": "110,107,122,104,107,86,103,110,77,78,79,111,108,96,108,102,106,121,100,100",
-                        "endOffsets": "161,269,392,497,605,692,796,907,985,1064,1144,1256,1365,1462,1571,1674,1781,1903,2004,2105"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,52",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,324,447,552,660,747,851,962,1040,1119,1199,1311,1420,1517,1626,1729,1836,1958,7067",
-                        "endColumns": "110,107,122,104,107,86,103,110,77,78,79,111,108,96,108,102,106,121,100,100",
-                        "endOffsets": "211,319,442,547,655,742,846,957,1035,1114,1194,1306,1415,1512,1621,1724,1831,1953,2054,7163"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\87940978aaaa17b72cab2845bb1c639c\\play-services-base-8.4.0\\res\\values-ms-rMY\\base_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/res/values-ms-rMY/base_strings.xml",
                     "from": {
                         "startLines": "24,10,9,8,7,5,6,4,19,18,17,16,3,28,27,26,25,21,20,22,12,11,15,14,13,23,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,20 +38,37 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jdaly\\.gradle\\caches\\transforms-2\\files-2.1\\79e49248803a4c800b7d7bb93077a1a1\\play-services-location-8.4.0\\res\\values-ms-rMY\\location_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/res/values-ms-rMY/common_strings.xml",
                     "from": {
-                        "startLines": "6,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "324,230",
-                        "endColumns": "106,93",
-                        "endOffsets": "426,319"
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "170",
+                        "endColumns": "264",
+                        "endOffsets": "430"
                     },
                     "to": {
-                        "startLines": "50,51",
-                        "startColumns": "4,4",
-                        "startOffsets": "6866,6973",
-                        "endColumns": "106,93",
-                        "endOffsets": "6968,7062"
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4876",
+                        "endColumns": "260",
+                        "endOffsets": "5132"
+                    }
+                },
+                {
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/res/values-ms-rMY/values-ms-rMY.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,166,274,397,502,610,697,801,912,990,1069,1149,1261,1370,1467,1576,1679,1786,1908,2009",
+                        "endColumns": "110,107,122,104,107,86,103,110,77,78,79,111,108,96,108,102,106,121,100,100",
+                        "endOffsets": "161,269,392,497,605,692,796,907,985,1064,1144,1256,1365,1462,1571,1674,1781,1903,2004,2105"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,52",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,324,447,552,660,747,851,962,1040,1119,1199,1311,1420,1517,1626,1729,1836,1958,7067",
+                        "endColumns": "110,107,122,104,107,86,103,110,77,78,79,111,108,96,108,102,106,121,100,100",
+                        "endOffsets": "211,319,442,547,655,742,846,957,1035,1114,1194,1306,1415,1512,1621,1724,1831,1953,2054,7163"
                     }
                 }
             ]

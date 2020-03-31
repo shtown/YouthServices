@@ -1,7 +1,7 @@
-#Wed Mar 25 16:44:47 EDT 2020
-base.0=E\:\\Development\\Android\\YouthServices\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
-path.1=classes.dex
+#Tue Mar 31 09:14:59 EDT 2020
+base.0=/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/dex/debug/out/classes.dex
+path.1=classes2.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=E\:\\Development\\Android\\YouthServices\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/dex/debug/out/classes2.dex
