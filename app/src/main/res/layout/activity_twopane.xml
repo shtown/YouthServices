@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:divider="?android:attr/dividerHorizontal"
-              android:showDividers="middle"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="middle">
 
     <FrameLayout
         android:id="@+id/detail_fragment_container"
@@ -15,12 +15,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:gravity="center"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
             android:drawableRight="@drawable/yslarge"
             android:drawablePadding="40dp"
-            />
+            android:gravity="center" />
 
     </FrameLayout>
 
@@ -28,8 +27,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:layout_weight="1">
-    </FrameLayout>
+        android:layout_weight="1"></FrameLayout>
 </LinearLayout>
 
 

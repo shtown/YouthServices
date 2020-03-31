@@ -5,17 +5,41 @@ INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthService
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5a8cd89d192afa40a3f460d7d46570fc/multidex-1.0.2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a28408ff23bc3fe109afb8fcc3e44ad1/recyclerview-v7-23.3.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/aaffe2c7f23d715ca045db9d0a51d031/appcompat-v7-28.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:16:1-20:12
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:16:1-28:12
 MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:16:1-26:12
-MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/93ee600e006118fa0b1e3ad8828fce02/support-v4-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7b826c3f5b1c303c68d239e88fd46d1f/recyclerview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/bcdc9cd251fcac7ebe27addc2e62b01d/cardview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/6e07dd593fd232c7452c3c20dd27a8e1/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/dd73b81ee8477d30c51950de1c7d4569/animated-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4ac8bacc6bdc06da514981c2a3855a4a/support-core-ui-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d5d5e0afb6d849720ba2f95b3e39fcb5/support-core-utils-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f70c181cc5010e4998d82bc8bd89fbfc/support-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/95c31ded494307afe99fdddbe88a703e/support-media-compat-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1b9d515d8d1965c403de8914ca55cb7e/loader-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f92ce9c7365574accb4fbe105fd65c21/viewpager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/27bfd3d5fa1a19402f7d4ba14fb093b2/coordinatorlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/efc59ff1f1e99fe01414b630035d92d4/drawerlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/6064ab6775e6301e62ccb69ace9dbdbd/slidingpanelayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3c823cc0e07b899cd90d87fa2096c1f1/customview-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a3a8c8cd8e894f6104aa84c89d48db43/swiperefreshlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/65fb01e2ae4e35f2f343847d68c9b98d/asynclayoutinflater-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4e7b3bbed8e6e29e2ba6d4fc6e8eccff/support-compat-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d107c5806233895e5be684de327d381f/versionedparcelable-28.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/ad328008f0a36049c16e2e42bbe6ba36/cursoradapter-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/0160f619c43aa1ecd28ae91ba8993552/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1938455035f0a35aa3eefef3aa9fbbc4/documentfile-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1dc9df8e70a38f62679d702ec717a6a9/localbroadcastmanager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4fd4a6ed80eb447e76c05986ef3fd6a1/print-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/823f37c489bd02c4a4d0f6ca442a27d7/viewmodel-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d622bc834304bbaef61946e6b6568c26/interpolator-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f33d666ad8cee70ee4e661f9bad8e372/livedata-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/85526c118dcfe3eae0cf402e2cecc572/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5853616defd81755613306a8befefe63/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:2:1-36:12
@@ -65,24 +89,20 @@ MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.g
 		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:11:22-64
 application
 ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:13:5-34:19
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:11:5-20
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:19:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:27:5-20
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:27:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:11:5-20
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4e7b3bbed8e6e29e2ba6d4fc6e8eccff/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4e7b3bbed8e6e29e2ba6d4fc6e8eccff/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d107c5806233895e5be684de327d381f/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d107c5806233895e5be684de327d381f/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4e7b3bbed8e6e29e2ba6d4fc6e8eccff/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 	android:supportsRtl
 		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
@@ -129,32 +149,78 @@ INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthService
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:multidex:1.0.2] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5a8cd89d192afa40a3f460d7d46570fc/multidex-1.0.2/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5a8cd89d192afa40a3f460d7d46570fc/multidex-1.0.2/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a28408ff23bc3fe109afb8fcc3e44ad1/recyclerview-v7-23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a28408ff23bc3fe109afb8fcc3e44ad1/recyclerview-v7-23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/2e8f3833497b78c9b9eb2a0e7cf9139d/cardview-v7-23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/aaffe2c7f23d715ca045db9d0a51d031/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/aaffe2c7f23d715ca045db9d0a51d031/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-location:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e9f6f0708b72fcef32f9118d726c5d61/animated-vector-drawable-23.3.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5d3098429616b9fb43df7d5bb803f3b1/support-vector-drawable-23.3.0/AndroidManifest.xml:5:5-43
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:26:5-42
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:26:5-42
 MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7f18f7cf54e35c11ca3a59b4d9099ff6/support-v4-23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/93ee600e006118fa0b1e3ad8828fce02/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/93ee600e006118fa0b1e3ad8828fce02/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7b826c3f5b1c303c68d239e88fd46d1f/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7b826c3f5b1c303c68d239e88fd46d1f/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/bcdc9cd251fcac7ebe27addc2e62b01d/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/bcdc9cd251fcac7ebe27addc2e62b01d/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.esri.arcgis.android:arcgis-android:10.2.8-1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/14034e99f66006cbadae1cc0aa59684c/arcgis-android-10.2.8-1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/6e07dd593fd232c7452c3c20dd27a8e1/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/6e07dd593fd232c7452c3c20dd27a8e1/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/dd73b81ee8477d30c51950de1c7d4569/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/dd73b81ee8477d30c51950de1c7d4569/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4ac8bacc6bdc06da514981c2a3855a4a/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4ac8bacc6bdc06da514981c2a3855a4a/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d5d5e0afb6d849720ba2f95b3e39fcb5/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d5d5e0afb6d849720ba2f95b3e39fcb5/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f70c181cc5010e4998d82bc8bd89fbfc/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f70c181cc5010e4998d82bc8bd89fbfc/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/95c31ded494307afe99fdddbe88a703e/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/95c31ded494307afe99fdddbe88a703e/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1b9d515d8d1965c403de8914ca55cb7e/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1b9d515d8d1965c403de8914ca55cb7e/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f92ce9c7365574accb4fbe105fd65c21/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f92ce9c7365574accb4fbe105fd65c21/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/27bfd3d5fa1a19402f7d4ba14fb093b2/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/27bfd3d5fa1a19402f7d4ba14fb093b2/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/efc59ff1f1e99fe01414b630035d92d4/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/efc59ff1f1e99fe01414b630035d92d4/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/6064ab6775e6301e62ccb69ace9dbdbd/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/6064ab6775e6301e62ccb69ace9dbdbd/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3c823cc0e07b899cd90d87fa2096c1f1/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3c823cc0e07b899cd90d87fa2096c1f1/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a3a8c8cd8e894f6104aa84c89d48db43/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a3a8c8cd8e894f6104aa84c89d48db43/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/65fb01e2ae4e35f2f343847d68c9b98d/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/65fb01e2ae4e35f2f343847d68c9b98d/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4e7b3bbed8e6e29e2ba6d4fc6e8eccff/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4e7b3bbed8e6e29e2ba6d4fc6e8eccff/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d107c5806233895e5be684de327d381f/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d107c5806233895e5be684de327d381f/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/ad328008f0a36049c16e2e42bbe6ba36/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/ad328008f0a36049c16e2e42bbe6ba36/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/0160f619c43aa1ecd28ae91ba8993552/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/0160f619c43aa1ecd28ae91ba8993552/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1938455035f0a35aa3eefef3aa9fbbc4/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1938455035f0a35aa3eefef3aa9fbbc4/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1dc9df8e70a38f62679d702ec717a6a9/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/1dc9df8e70a38f62679d702ec717a6a9/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4fd4a6ed80eb447e76c05986ef3fd6a1/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4fd4a6ed80eb447e76c05986ef3fd6a1/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/823f37c489bd02c4a4d0f6ca442a27d7/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/823f37c489bd02c4a4d0f6ca442a27d7/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d622bc834304bbaef61946e6b6568c26/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/d622bc834304bbaef61946e6b6568c26/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f33d666ad8cee70ee4e661f9bad8e372/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/f33d666ad8cee70ee4e661f9bad8e372/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/85526c118dcfe3eae0cf402e2cecc572/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/85526c118dcfe3eae0cf402e2cecc572/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5853616defd81755613306a8befefe63/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/5853616defd81755613306a8befefe63/runtime-1.1.1/AndroidManifest.xml:20:5-44
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.3.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/7189ed080d110a1ad396c09c35ab832a/appcompat-v7-23.3.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 		ADDED from /Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
