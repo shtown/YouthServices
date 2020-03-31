@@ -5,11 +5,8 @@ import android.support.annotation.LayoutRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import com.esri.android.runtime.ArcGISRuntime;
-
-import java.io.Console;
 
 
 /**
@@ -35,7 +32,7 @@ public abstract class  SingleFragmentActivity extends AppCompatActivity {
         }
         catch (Exception ex)
         {
-            //Log.v(TAG, "client id not set");
+            ////Log.v(TAG, "client id not set");
 
         }
 

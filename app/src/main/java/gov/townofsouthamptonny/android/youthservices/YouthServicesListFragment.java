@@ -230,12 +230,12 @@ public class  YouthServicesListFragment extends Fragment  {
 
         @Override
         protected List<ServicesItem> doInBackground(Void... params) {
-            Log.i(TAG, "doInBackground()");
+            ////Log.i(TAG, "doInBackground()");
             return new YSFetchr().fetchItems();
         }
         @Override
         protected void onPreExecute() {
-            Log.i(TAG, "onPreExecute()");
+            ////Log.i(TAG, "onPreExecute()");
 
             final Handler handle = new StatHandler();
 
@@ -269,8 +269,8 @@ public class  YouthServicesListFragment extends Fragment  {
         @Override
         protected void onPostExecute(List<ServicesItem> items) {
 
-            Log.d(TAG, "onPostExecute() lat: " + Double.toString(lat) + " lon:" + Double.toString(lon));
-            Log.i(TAG, "setItemSelected being set to true");
+            ////Log.d(TAG, "onPostExecute() lat: " + Double.toString(lat) + " lon:" + Double.toString(lon));
+            ////Log.i(TAG, "setItemSelected being set to true");
             setItemSelected = true;
             getLocationServicesClient();
             mItems = items;
@@ -378,11 +378,12 @@ public class  YouthServicesListFragment extends Fragment  {
             }
 
             @Override
+            @SuppressWarnings("unchecked")
             protected void publishResults(CharSequence constraint, FilterResults results) {
-                Log.d(TAG, "publishResults() called, setItemSelected is: " + setItemSelected);
+                //Log.d(TAG, "publishResults() called, setItemSelected is: " + setItemSelected);
 
-                ServicesGenerator.addList((ArrayList<ServicesItem>) results.values);
-                setServicesItems((ArrayList<ServicesItem>) results.values);
+                ServicesGenerator.addList((ArrayList<ServicesItem>) results.values);  //problem with unchecked cast
+                setServicesItems((ArrayList<ServicesItem>) results.values);//problem with unchecked cast
 
 
                 if (mAdapter == null) {
@@ -400,7 +401,7 @@ public class  YouthServicesListFragment extends Fragment  {
 
                 if(results.count == 0 && setItemSelected == true)  {
 
-                    Log.i(TAG, "setItemSelected is true");
+                    //Log.i(TAG, "setItemSelected is true");
                     Toast.makeText(getActivity(), "There are no results for this query!  Please try another combination", Toast.LENGTH_LONG).show();
                 }
 
@@ -424,7 +425,7 @@ public class  YouthServicesListFragment extends Fragment  {
     public void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
 
-        Log.i(TAG, "onCreate() called");
+        //Log.i(TAG, "onCreate() called");
         getLocationServicesClient();
         setHasOptionsMenu(true);
         setRetainInstance(true);
@@ -435,12 +436,12 @@ public class  YouthServicesListFragment extends Fragment  {
     public void onStart() {
         super.onStart();
 
-        Log.d(TAG, "onStart() lat: " + Double.toString(lat) + " lon:" + Double.toString(lon));
+        //Log.d(TAG, "onStart() lat: " + Double.toString(lat) + " lon:" + Double.toString(lon));
     }
 
     @Override
     public void onStop()  {
-        Log.d(TAG, "onStop()");
+        //Log.d(TAG, "onStop()");
         mClient.disconnect();
         super.onStop();
     }
@@ -477,7 +478,7 @@ public class  YouthServicesListFragment extends Fragment  {
                 .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
                     @Override
                     public void onConnected(Bundle bundle)  {
-                        //Log.d(TAG, "GoogleApi connected");
+                        ////Log.d(TAG, "GoogleApi connected");
                         LocationRequest request = LocationRequest.create();
                         request.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
                         request.setNumUpdates(1);
@@ -513,7 +514,7 @@ public class  YouthServicesListFragment extends Fragment  {
                                                 double yslon = Double.parseDouble(item.getLon());
                                                 Location.distanceBetween(lat, lon, yslat, yslon, distance);
                                                 double meters2miles = distance[0] * 0.00062137;
-                                                //Log.d(TAG, "LocationChanged() lat: " + Double.toString(lat) + " lon:" + Double.toString(lon) + " distance: " + Float.toString(distance[0]) + " miles: " + Double.toString(meters2miles));
+                                                ////Log.d(TAG, "LocationChanged() lat: " + Double.toString(lat) + " lon:" + Double.toString(lon) + " distance: " + Float.toString(distance[0]) + " miles: " + Double.toString(meters2miles));
                                                 item.setDistFromCenter(meters2miles);
                                             } catch (Exception e) {
 
@@ -540,7 +541,7 @@ public class  YouthServicesListFragment extends Fragment  {
                     @Override
                     public void onConnectionSuspended(int i)  {
                         //Toast.makeText(getActivity(), "on connection suspended", Toast.LENGTH_SHORT).show();
-                        //Log.d(TAG, "Connection Suspended");
+                        ////Log.d(TAG, "Connection Suspended");
                     }
                 })
                 .build();
@@ -592,7 +593,7 @@ public class  YouthServicesListFragment extends Fragment  {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)  {
-        Log.i(TAG, "onOptionsItemSelected() called");
+        //Log.i(TAG, "onOptionsItemSelected() called");
         switch (item.getItemId()) {
 
             case R.id.menu_item_show_subtitle:
@@ -640,14 +641,14 @@ public class  YouthServicesListFragment extends Fragment  {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Log.d(TAG, "services onItemSelectedListener called");
+                //Log.d(TAG, "services onItemSelectedListener called");
 
                 String item = parent.getItemAtPosition(position).toString();
                 selectedService = item;
                 mAdapter.getFilter().filter(item, new Filter.FilterListener() {
                     @Override
                     public void onFilterComplete(int count) {
-                        Log.d(TAG, "onFilterComplete called");
+                        //Log.d(TAG, "onFilterComplete called");
                     }
                 });
             }
@@ -667,14 +668,14 @@ public class  YouthServicesListFragment extends Fragment  {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Log.d(TAG, "towns onItemSelectedListener called");
+                //Log.d(TAG, "towns onItemSelectedListener called");
 
                 String item = parent.getItemAtPosition(position).toString();
                 selectedTown = item;
                 mAdapter.getFilter().filter(item, new Filter.FilterListener() {
                     @Override
                     public void onFilterComplete(int count) {
-                        Log.d(TAG, "towns onFilterComplete called");
+                        //Log.d(TAG, "towns onFilterComplete called");
                     }
                 });
             }

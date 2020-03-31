@@ -7,7 +7,7 @@
 7    <uses-sdk
 8        android:minSdkVersion="16"
 8-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
-9        android:targetSdkVersion="23" />
+9        android:targetSdkVersion="28" />
 9-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml
 10
 11    <uses-feature
@@ -51,42 +51,46 @@
 29-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:16:9-41
 30        android:supportsRtl="true"
 30-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:17:9-35
-31        android:theme="@style/AppTheme" >
-31-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:18:9-40
-32        <meta-data
-32-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:20:9-22:70
-33            android:name="gov.townofsouthamptonny.android.youthservices."
-33-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:21:13-74
-34            android:value="AIzaSyDdniIKAiV0VoSeU5N4QRo4-meiGUk5aXY" />
-34-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:22:13-68
-35
-36        <activity android:name="gov.townofsouthamptonny.android.youthservices.YouthServicesListActivity" >
-36-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:23:9-28:20
-36-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:23:19-60
-37            <intent-filter>
-37-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:24:13-27:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:25:17-68
-38-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:25:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:26:17-76
-40-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:26:27-74
-41            </intent-filter>
-42        </activity>
-43        <activity android:name="gov.townofsouthamptonny.android.youthservices.YouthServicesPagerActivity" >
-43-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:29:9-32:20
-43-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:29:19-61
-44            android:label="@string/app_name"
-45            android:parentActivityName=".YouthServicesListActivity"
-46        </activity>
-47
-48        <meta-data
-48-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:21:9-23:69
-49            android:name="com.google.android.gms.version"
-49-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:22:13-58
-50            android:value="@integer/google_play_services_version" />
-50-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:23:13-66
-51    </application>
-52
-53</manifest>
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:18:9-40
+33        <meta-data
+33-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:20:9-22:70
+34            android:name="gov.townofsouthamptonny.android.youthservices."
+34-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:21:13-74
+35            android:value="AIzaSyDdniIKAiV0VoSeU5N4QRo4-meiGUk5aXY" />
+35-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:22:13-68
+36
+37        <activity android:name="gov.townofsouthamptonny.android.youthservices.YouthServicesListActivity" >
+37-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:23:9-28:20
+37-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:23:19-60
+38            <intent-filter>
+38-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:24:13-27:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:25:17-68
+39-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:25:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:26:17-76
+41-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:26:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:29:9-32:20
+45            android:name="gov.townofsouthamptonny.android.youthservices.YouthServicesPagerActivity"
+45-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:29:19-61
+46            android:label="@string/app_name"
+46-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:30:13-45
+47            android:parentActivityName="gov.townofsouthamptonny.android.youthservices.YouthServicesListActivity" >
+47-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:31:13-68
+48        </activity>
+49
+50        <meta-data
+50-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:21:9-23:69
+51            android:name="com.google.android.gms.version"
+51-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:22:13-58
+52            android:value="@integer/google_play_services_version" />
+52-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:23:13-66
+53    </application>
+54
+55</manifest>
