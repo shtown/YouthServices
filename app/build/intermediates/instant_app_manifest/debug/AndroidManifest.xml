@@ -6,7 +6,7 @@
     android:versionName="1.2" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="24"
         android:targetSdkVersion="28" />
 
     <uses-feature
@@ -27,11 +27,13 @@
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
+        android:extractNativeLibs="false"
         android:icon="@mipmap/appicon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
         <meta-data
             android:name="gov.townofsouthamptonny.android.youthservices."
             android:value="AIzaSyDdniIKAiV0VoSeU5N4QRo4-meiGUk5aXY" />
@@ -48,6 +50,10 @@
             android:label="@string/app_name"
             android:parentActivityName="gov.townofsouthamptonny.android.youthservices.YouthServicesListActivity" >
         </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <meta-data
             android:name="com.google.android.gms.version"

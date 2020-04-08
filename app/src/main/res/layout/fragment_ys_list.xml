@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical" >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:visibility="visible">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,22 +12,22 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:text="@string/hotline_info"
             android:id="@+id/hotlineButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:background="#ff6600"
-            android:textColor="#ffffff"
-            android:layout_weight="1"/>
+            android:text="@string/hotline_info"
+            android:textColor="#ffffff" />
 
         <Button
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:text="@string/calendar_info"
             android:id="@+id/calendarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:background="#1ec45b"
-            android:textColor="#ffffff"
-            android:layout_weight="1"/>
+            android:text="@string/calendar_info"
+            android:textColor="#ffffff" />
 
     </LinearLayout>
 
@@ -35,76 +37,75 @@
         android:layout_height="50dp">
 
         <TextView
+            android:id="@+id/spinTextServices"
             android:layout_width="110dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Service: "
-            android:id="@+id/spinTextServices"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:background="#4c6175"
+            android:gravity="center"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="#4c6175"
-            android:autoText="false"
+            android:text="Service: "
             android:textColor="#efe1e1"
-            android:textSize="16dp"/>
+            android:textSize="16dp" />
 
         <Spinner
             android:id="@+id/services_spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:spinnerMode="dialog"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:layout_toRightOf="@id/spinTextServices"
+            android:background="#87cefa"
             android:dropDownSelector="@android:drawable/btn_dialog"
-            android:background="#87cefa"/>
+            android:spinnerMode="dialog" />
 
     </RelativeLayout>
 
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="50dp">
 
         <TextView
+            android:id="@+id/spinTextTowns"
             android:layout_width="110dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Town: "
-            android:id="@+id/spinTextTowns"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:background="#4c6175"
+            android:gravity="center"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="#4c6175"
-            android:autoText="false"
+            android:text="Town: "
             android:textColor="#efe1e1"
-            android:textSize="16dp"/>
+            android:textSize="16dp" />
 
         <Spinner
             android:id="@+id/towns_spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:spinnerMode="dropdown"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:layout_toRightOf="@id/spinTextTowns"
-            android:dropDownSelector="@android:drawable/btn_dialog"
             android:background="#66ffff"
-                    />
+            android:dropDownSelector="@android:drawable/btn_dialog"
+            android:spinnerMode="dropdown" />
 
     </RelativeLayout>
 
+
     <android.support.v7.widget.RecyclerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ys_recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#c9c8ec"
-    android:foreground="#d9b1b1"/>
+        android:id="@+id/ys_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
 </LinearLayout>
 

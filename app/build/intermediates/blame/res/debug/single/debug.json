@@ -112,10 +112,6 @@
         "source": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/res/drawable-mdpi/ic_perm_phone_msg_black_24dp.png"
     },
     {
-        "merged": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/res/merged/debug/layout_list_twopane.xml.flat",
-        "source": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/res/layout/list_twopane.xml"
-    },
-    {
         "merged": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
