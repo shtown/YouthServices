@@ -4,7 +4,7 @@
             "outputFile": "/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml",
             "map": [
                 {
-                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/79e49248803a4c800b7d7bb93077a1a1/play-services-location-8.4.0/res/values-kk-rKZ/location_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/db0f1d750665521af011b8ed2cef9a33/play-services-location-8.4.0/res/values-kk-rKZ/location_strings.xml",
                     "from": {
                         "startLines": "6,5",
                         "startColumns": "4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/res/values-kk-rKZ/common_strings.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "170",
-                        "endColumns": "247",
-                        "endOffsets": "413"
-                    },
-                    "to": {
-                        "startLines": "19",
-                        "startColumns": "4",
-                        "startOffsets": "2828",
-                        "endColumns": "243",
-                        "endOffsets": "3067"
-                    }
-                },
-                {
-                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/87940978aaaa17b72cab2845bb1c639c/play-services-base-8.4.0/res/values-kk-rKZ/base_strings.xml",
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/35a4bd2a22f585b1961db5a0fba20697/play-services-base-8.4.0/res/values-kk-rKZ/base_strings.xml",
                     "from": {
                         "startLines": "24,10,9,8,7,5,6,4,19,18,17,16,3,28,27,26,25,21,20,22,12,11,15,14,13,23,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "105,370,499,684,812,941,1146,1352,1480,1664,1792,1961,2079,2218,2386,2515,2700,3072,3318,3444,3552,3740,3871,4083,4219,4406,4498,4587",
                         "endColumns": "264,128,184,127,128,204,205,127,183,127,168,117,138,167,128,184,127,245,125,107,187,130,211,135,186,91,88,107",
                         "endOffsets": "365,494,679,807,936,1141,1347,1475,1659,1787,1956,2074,2213,2381,2510,2695,2823,3313,3439,3547,3735,3866,4078,4214,4401,4493,4582,4690"
+                    }
+                },
+                {
+                    "source": "/Users/johndaly/.gradle/caches/transforms-2/files-2.1/a893ae49f123c6d12cf6da223947dd92/play-services-basement-8.4.0/res/values-kk-rKZ/common_strings.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "170",
+                        "endColumns": "247",
+                        "endOffsets": "413"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "2828",
+                        "endColumns": "243",
+                        "endOffsets": "3067"
                     }
                 }
             ]

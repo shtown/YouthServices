@@ -35,8 +35,8 @@
 20
 21    <!-- Include required permissions for Google Maps API to run. -->
 22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-22-->[com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:20:5-78
-22-->[com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/e447f3626b8428559b1205958bf5b49b/play-services-maps-8.4.0/AndroidManifest.xml:20:22-76
+22-->[com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/b4f650e8a7a3c7dd6095b9534c47e0ca/play-services-maps-8.4.0/AndroidManifest.xml:20:5-78
+22-->[com.google.android.gms:play-services-maps:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/b4f650e8a7a3c7dd6095b9534c47e0ca/play-services-maps-8.4.0/AndroidManifest.xml:20:22-76
 23
 24    <application
 24-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:13:5-34:19
@@ -45,7 +45,7 @@
 26        android:allowBackup="true"
 26-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:14:9-35
 27        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-27-->[com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/4e7b3bbed8e6e29e2ba6d4fc6e8eccff/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+27-->[com.android.support:support-compat:28.0.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/09c1f5634c674c46b74176ad3d1ddced/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 28        android:debuggable="true"
 29        android:icon="@mipmap/appicon"
 29-->/Users/johndaly/Development/SouthamptonMobile/Android/YouthServices/app/src/main/AndroidManifest.xml:15:9-39
@@ -88,11 +88,11 @@
 49        </activity>
 50
 51        <meta-data
-51-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:21:9-23:69
+51-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a893ae49f123c6d12cf6da223947dd92/play-services-basement-8.4.0/AndroidManifest.xml:21:9-23:69
 52            android:name="com.google.android.gms.version"
-52-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:22:13-58
+52-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a893ae49f123c6d12cf6da223947dd92/play-services-basement-8.4.0/AndroidManifest.xml:22:13-58
 53            android:value="@integer/google_play_services_version" />
-53-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/3ead6311fcedafa8aa1a99fa9b464a2c/play-services-basement-8.4.0/AndroidManifest.xml:23:13-66
+53-->[com.google.android.gms:play-services-basement:8.4.0] /Users/johndaly/.gradle/caches/transforms-2/files-2.1/a893ae49f123c6d12cf6da223947dd92/play-services-basement-8.4.0/AndroidManifest.xml:23:13-66
 54    </application>
 55
 56</manifest>
