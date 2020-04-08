@@ -6,6 +6,9 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
         applicationId "gov.townofsouthamptonny.android.youthservices"
         minSdkVersion 26
         targetSdkVersion 28
