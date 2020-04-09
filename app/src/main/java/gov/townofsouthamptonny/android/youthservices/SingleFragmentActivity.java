@@ -1,6 +1,8 @@
 package gov.townofsouthamptonny.android.youthservices;
 
 import android.os.Bundle;
+import android.util.Log;
+
 import androidx.annotation.LayoutRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -32,7 +34,7 @@ public abstract class  SingleFragmentActivity extends AppCompatActivity {
         }
         catch (Exception ex)
         {
-            ////Log.v(TAG, "client id not set");
+           Log.v(TAG, "client id not set");
 
         }
 

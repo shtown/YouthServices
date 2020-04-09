@@ -5,6 +5,8 @@ android {
     buildToolsVersion '28.0.3'
     useLibrary 'org.apache.http.legacy'
 
+
+
     defaultConfig {
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
@@ -17,6 +19,11 @@ android {
 
         multiDexEnabled true
 }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
 packagingOptions{
     exclude 'META-INF/LGPL2.1'
