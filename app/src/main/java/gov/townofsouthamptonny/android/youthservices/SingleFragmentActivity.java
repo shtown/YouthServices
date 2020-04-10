@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.esri.android.runtime.ArcGISRuntime;
+import com.esri.arcgisruntime.ArcGISRuntimeEnvironment;
 
 
 /**
@@ -30,7 +31,8 @@ public abstract class  SingleFragmentActivity extends AppCompatActivity {
 
 
         try {
-            ArcGISRuntime.setClientId("hOGiF4ClbCUbiQcJ");
+            ArcGISRuntimeEnvironment.setLicense("runtimelite,1000,rud#########,day-month-year,####################");
+         //   ArcGISRuntime.setClientId("hOGiF4ClbCUbiQcJ");
         }
         catch (Exception ex)
         {
