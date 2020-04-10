@@ -1,6 +1,7 @@
 package gov.townofsouthamptonny.android.youthservices;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -17,14 +18,16 @@ import com.esri.android.map.Callout;
 import com.esri.android.map.GraphicsLayer;
 import com.esri.android.map.MapOptions;
 import com.esri.android.map.MapOptions.MapType;
-import com.esri.android.map.MapView;
+//import com.esri.android.map.MapView;
+import com.esri.arcgisruntime.geometry.Polygon;
+import com.esri.arcgisruntime.mapping.view.MapView;
 import com.esri.android.map.event.OnSingleTapListener;
 import com.esri.android.map.event.OnStatusChangedListener;
 import com.esri.core.geometry.GeometryEngine;
 import com.esri.core.geometry.Point;
-import com.esri.core.geometry.Polygon;
 import com.esri.core.map.Graphic;
 import com.esri.core.symbol.SimpleMarkerSymbol;
+
 
 import java.util.UUID;
 
@@ -77,9 +80,9 @@ public class YouthServicesFragment extends Fragment {
     }
 
     @Override
-    public void onAttach(Activity activity)  {
-        super.onAttach(activity);
-        mCallbacks = (Callbacks)activity;
+    public void onAttach(Context context)  {
+        super.onAttach(context);
+        mCallbacks = (Callbacks)context;
     }
 
     public void onDetach()  {
@@ -106,7 +109,7 @@ public class YouthServicesFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        mCurrentMapExtent = mMap.getExtent();
+        mCurrentMapExtent = mMap.getVisibleArea();
         mMapType = item.getItemId();
 
         switch(mMapType)  {
@@ -190,7 +193,7 @@ public class YouthServicesFragment extends Fragment {
                     @Override
                     public void onStatusChanged(Object source, STATUS status) {
 
-                        mMap.setExtent(mCurrentMapExtent);
+                        mMap.setMap(mCurrentMapExtent);
 
                         if (OnStatusChangedListener.STATUS.INITIALIZED == status && source == mMap) {
                             double lat, lon;
