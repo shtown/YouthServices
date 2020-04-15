@@ -58,12 +58,9 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ys_recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#c9c8ec"
-    android:foreground="#d9b1b1"/>
+        android:id="@+id/ys_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
 

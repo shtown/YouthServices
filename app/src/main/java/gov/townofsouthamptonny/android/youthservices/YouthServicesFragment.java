@@ -5,7 +5,8 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
-
+import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
 //import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,7 +16,6 @@ import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 //import com.esri.android.map.Callout;
@@ -30,16 +30,19 @@ import com.esri.arcgisruntime.geometry.Polygon;
 
 import com.esri.android.map.event.OnSingleTapListener;
 import com.esri.android.map.event.OnStatusChangedListener;
+
 import com.esri.arcgisruntime.layers.FeatureLayer;
 import com.esri.arcgisruntime.layers.Layer;
 import com.esri.arcgisruntime.layers.RasterLayer;
 //import com.esri.core.geometry.GeometryEngine;
 //import com.esri.core.geometry.Point;
 //import com.esri.core.map.Graphic;
+import com.esri.arcgisruntime.mapping.Viewpoint;
 import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
 import com.esri.arcgisruntime.mapping.view.DefaultSceneViewOnTouchListener;
-import com.esri.core.symbol.SimpleMarkerSymbol;
+//import com.esri.core.symbol.SimpleMarkerSymbol;
 
+import com.esri.arcgisruntime.geometry.SpatialReferences;
 import com.esri.arcgisruntime.mapping.view.MapView;
 import com.esri.arcgisruntime.mapping.view.Callout;
 import com.esri.arcgisruntime.mapping.Basemap;
@@ -48,9 +51,10 @@ import com.esri.arcgisruntime.geometry.GeometryEngine;
 import com.esri.arcgisruntime.geometry.Point;
 import com.esri.arcgisruntime.mapping.view.Graphic;
 import com.esri.arcgisruntime.mapping.view.GraphicsOverlay;
+import com.esri.arcgisruntime.symbology.SimpleMarkerSymbol;
 
 
-
+import java.text.DecimalFormat;
 import java.util.Map;
 import java.util.UUID;
 
@@ -214,17 +218,62 @@ public class YouthServicesFragment extends Fragment {
         int mCalloutShown = 1;
 
         mMapView = (MapView) v.findViewById(R.id.map);
-
-        final GraphicsOverlay graphicsLayer = new GraphicsOverlay();
+          GraphicsOverlay graphicsLayer = new GraphicsOverlay();
+        mMap = new ArcGISMap(Basemap.Type.STREETS, 40.862549,-72.511397,12);
 
         mMapView.setMap(mMap);
+        mMapView.getMap().setReferenceScale(25000.00);
+        mMapView.getGraphicsOverlays().add(graphicsLayer);
+
+   //     Point point = GeometryEngine.project(lon, lat, mMap.getSpatialReference());
+
+        final SimpleMarkerSymbol markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.Style.CIRCLE, 0xFFFF0000, 5);
+        final Graphic inputPointGraphic = new Graphic();
+        inputPointGraphic.setSymbol(markerSymbol);
+
+        graphicsLayer.getGraphics().add(inputPointGraphic);
+        final DecimalFormat decimalFormat = new DecimalFormat("#.00000");
+
+        int color = Color.rgb(255,0,0);
+
+
+
+
+
+
         mMapView.setOnTouchListener(new DefaultMapViewOnTouchListener(getContext(),mMapView)  {
 
                     private static final long serialVersionUID = 1L;
 
+                    public boolean onTouchEvent(MotionEvent event)  {
+                        String foo = "bar";
+                        return true;
+                    }
+
                     @Override
                     public boolean onSingleTapConfirmed(MotionEvent e)  {
 
+                        android.graphics.Point clickedLocation = new android.graphics.Point(Math.round(e.getX()),
+                                Math.round(e.getY()));
+                        Point originalPoint = mMapView.screenToLocation(clickedLocation);
+                        inputPointGraphic.setGeometry(originalPoint);
+                        // project the web mercator point to WGS84 (WKID 4236)
+                        Point projectedPoint = (Point) GeometryEngine.project(originalPoint, SpatialReferences.getWgs84());
+
+                        // show the original and projected point coordinates in a callout from the graphic
+                        String ox = decimalFormat.format(originalPoint.getX());
+                        String oy = decimalFormat.format(originalPoint.getY());
+                        String px = decimalFormat.format(projectedPoint.getX());
+                        String py = decimalFormat.format(projectedPoint.getY());
+                        // create a textView for the content of the callout
+                        TextView calloutContent = new TextView(getContext());
+                        calloutContent.setTextColor(Color.BLACK);
+                        calloutContent.setText(String.format("Coordinates\nOriginal: %s, %s\nProjected: %s, %s", ox, oy, px, py));
+                        // create callout
+                        final Callout callout = mMapView.getCallout();
+                        callout.setLocation(originalPoint);
+                        callout.setContent(calloutContent);
+                        callout.show();
 
 
                         return super.onSingleTapConfirmed(e);
@@ -235,6 +284,8 @@ public class YouthServicesFragment extends Fragment {
 
         return v;
     }
+
+
 
     public static YouthServicesFragment newInstance(UUID YouthServiceId) {
         Bundle args = new Bundle();
