@@ -97,11 +97,13 @@ public class YouthServicesFragment extends Fragment {
 
     Polygon mCurrentMapExtent = null;
 
+    /*
     final MapOptions mTopoBasemap      = new MapOptions(MapType.TOPO);
     final MapOptions mStreetsBasemap   = new MapOptions(MapType.STREETS);
     final MapOptions mSatelliteBasemap = new MapOptions(MapType.SATELLITE);
     final MapOptions mHybridBasemap    = new MapOptions(MapType.HYBRID);
     final MapOptions mNatGeoBasemap    = new MapOptions(MapType.NATIONAL_GEOGRAPHIC);
+     */
 
     private Callbacks mCallbacks;
 
@@ -140,9 +142,8 @@ public class YouthServicesFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        mCurrentMapExtent = mMapView.getVisibleArea();
-
         mMapType = item.getItemId();
+        mCurrentMapExtent = mMapView.getVisibleArea();
 
         switch(mMapType)  {
             case R.id.menu_item_streets:
@@ -179,8 +180,10 @@ public class YouthServicesFragment extends Fragment {
                 mMapView.setMap(mMap);
                 mNatGeoMenuItem.setChecked(true);
                 break;
-
         }
+
+        mMapView.setViewpointGeometryAsync(mCurrentMapExtent);
+
         return true;
     }
 
@@ -237,7 +240,6 @@ public class YouthServicesFragment extends Fragment {
 
             Point projectedPoint = (Point) GeometryEngine.project(point, SpatialReferences.getWgs84());
             mMapView.setViewpointCenterAsync(projectedPoint, 5000);
-            //mMapView.setViewpointGeometryAsync(mCurrentMapExtent);
 
         } catch (Exception ex) {
             lat = 40.8876;
