@@ -1,12 +1,15 @@
 package gov.townofsouthamptonny.android.youthservices;
 
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+
+import androidx.annotation.LayoutRes;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.esri.android.runtime.ArcGISRuntime;
+import com.esri.arcgisruntime.ArcGISRuntimeEnvironment;
 
 
 /**
@@ -28,11 +31,12 @@ public abstract class  SingleFragmentActivity extends AppCompatActivity {
 
 
         try {
-            ArcGISRuntime.setClientId("hOGiF4ClbCUbiQcJ");
+            ArcGISRuntimeEnvironment.setLicense("runtimelite,1000,rud#########,day-month-year,####################");
+         //   ArcGISRuntime.setClientId("hOGiF4ClbCUbiQcJ");
         }
         catch (Exception ex)
         {
-            ////Log.v(TAG, "client id not set");
+           Log.v(TAG, "client id not set");
 
         }
 

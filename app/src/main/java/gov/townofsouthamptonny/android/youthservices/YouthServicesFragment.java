@@ -1,31 +1,63 @@
 package gov.townofsouthamptonny.android.youthservices;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
+//import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.esri.android.map.Callout;
+//import com.esri.android.map.Callout;
 import com.esri.android.map.GraphicsLayer;
 import com.esri.android.map.MapOptions;
+
 import com.esri.android.map.MapOptions.MapType;
-import com.esri.android.map.MapView;
+//import com.esri.android.map.MapView;
+import com.esri.arcgisruntime.geometry.Envelope;
+import com.esri.arcgisruntime.geometry.Polygon;
+//import com.esri.core.geometry.Polygon;
+
 import com.esri.android.map.event.OnSingleTapListener;
 import com.esri.android.map.event.OnStatusChangedListener;
-import com.esri.core.geometry.GeometryEngine;
-import com.esri.core.geometry.Point;
-import com.esri.core.geometry.Polygon;
-import com.esri.core.map.Graphic;
-import com.esri.core.symbol.SimpleMarkerSymbol;
 
+import com.esri.arcgisruntime.geometry.SpatialReference;
+import com.esri.arcgisruntime.layers.FeatureLayer;
+import com.esri.arcgisruntime.layers.Layer;
+import com.esri.arcgisruntime.layers.RasterLayer;
+//import com.esri.core.geometry.GeometryEngine;
+//import com.esri.core.geometry.Point;
+//import com.esri.core.map.Graphic;
+import com.esri.arcgisruntime.mapping.Viewpoint;
+import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
+import com.esri.arcgisruntime.mapping.view.DefaultSceneViewOnTouchListener;
+//import com.esri.core.symbol.SimpleMarkerSymbol;
+
+import com.esri.arcgisruntime.geometry.SpatialReferences;
+import com.esri.arcgisruntime.mapping.view.MapView;
+import com.esri.arcgisruntime.mapping.view.Callout;
+import com.esri.arcgisruntime.mapping.Basemap;
+import com.esri.arcgisruntime.mapping.ArcGISMap;
+import com.esri.arcgisruntime.geometry.GeometryEngine;
+import com.esri.arcgisruntime.geometry.Point;
+import com.esri.arcgisruntime.geometry.Polygon;
+import com.esri.arcgisruntime.mapping.view.Graphic;
+import com.esri.arcgisruntime.mapping.view.GraphicsOverlay;
+import com.esri.arcgisruntime.symbology.SimpleMarkerSymbol;
+
+
+import java.text.DecimalFormat;
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -49,11 +81,12 @@ public class YouthServicesFragment extends Fragment {
     private TextView mDescriptionField;
     private ViewGroup mCalloutContent;
     private Callout callout;
-    private MapView  mMap;
 
+
+    private MapView  mMapView;
+    private ArcGISMap mMap;
 
     private int mMapType;
-    private int mCalloutShown;
     private String mMapChoice = "satellite";
 
     MenuItem mStreetsMenuItem   = null;
@@ -77,9 +110,9 @@ public class YouthServicesFragment extends Fragment {
     }
 
     @Override
-    public void onAttach(Activity activity)  {
-        super.onAttach(activity);
-        mCallbacks = (Callbacks)activity;
+    public void onAttach(Context context)  {
+        super.onAttach(context);
+        mCallbacks = (Callbacks)context;
     }
 
     public void onDetach()  {
@@ -106,37 +139,44 @@ public class YouthServicesFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        mCurrentMapExtent = mMap.getExtent();
+
+        mCurrentMapExtent = mMapView.getVisibleArea();
+
         mMapType = item.getItemId();
 
         switch(mMapType)  {
             case R.id.menu_item_streets:
                 mMapChoice = "streets";
-                mMap.setMapOptions(mStreetsBasemap);
+                mMap = new ArcGISMap(Basemap.Type.STREETS, 40.862549,-72.511397,12);
+                mMapView.setMap(mMap);
                 mStreetsMenuItem.setChecked(true);
                 break;
 
             case R.id.menu_item_topo:
                 mMapChoice = "topo";
-                mMap.setMapOptions(mTopoBasemap);
+                mMap = new ArcGISMap(Basemap.Type.TOPOGRAPHIC, 40.862549,-72.511397,12);
+                mMapView.setMap(mMap);
                 mTopoMenuItem.setChecked(true);
                 break;
 
             case R.id.menu_item_satellite:
                 mMapChoice = "satellite";
-                mMap.setMapOptions(mSatelliteBasemap);
+                mMap = new ArcGISMap(Basemap.Type.IMAGERY, 40.862549,-72.511397,12);
+                mMapView.setMap(mMap);
                 mSatelliteMenuItem.setChecked(true);
                 break;
 
             case R.id.menu_item_hybrid:
                 mMapChoice = "hybrid";
-                mMap.setMapOptions(mHybridBasemap);
+                mMap = new ArcGISMap(Basemap.Type.TERRAIN_WITH_LABELS, 40.862549,-72.511397,12);
+                mMapView.setMap(mMap);
                 mHybridMenuItem.setChecked(true);
                 break;
 
             case R.id.menu_item_natgeo:
                 mMapChoice = "natgeo";
-                mMap.setMapOptions(mNatGeoBasemap);
+                mMap = new ArcGISMap(Basemap.Type.NATIONAL_GEOGRAPHIC, 40.862549,-72.511397,12);
+                mMapView.setMap(mMap);
                 mNatGeoMenuItem.setChecked(true);
                 break;
 
@@ -162,13 +202,13 @@ public class YouthServicesFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        mMap.pause();
+        //mMap.pause();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        mMap.unpause();
+        //mMap.unpause();
 
     }
 
@@ -177,118 +217,98 @@ public class YouthServicesFragment extends Fragment {
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         final View v = inflater.inflate(R.layout.fragment_ys, container, false);
-        mCalloutShown = 1;
+        int mCalloutShown = 1;
 
-        mMap = (MapView) v.findViewById(R.id.map);
+        mMapView = (MapView) v.findViewById(R.id.map);
+          GraphicsOverlay graphicsLayer = new GraphicsOverlay();
+        mMap = new ArcGISMap(Basemap.Type.STREETS, 40.862549,-72.511397,12);
 
-        final GraphicsLayer graphicsLayer = new GraphicsLayer();
+        mMapView.setMap(mMap);
+        mMapView.getMap().setReferenceScale(5000);
+        mMapView.getGraphicsOverlays().add(graphicsLayer);
 
-                mMap.setOnStatusChangedListener(new OnStatusChangedListener() {
+        double lat,lon;
+        try {
+
+            lat = Double.parseDouble(mYouthService.getLat());
+            lon = Double.parseDouble(mYouthService.getLon());
+
+            Point point = new Point(lon,lat, mMap.getSpatialReference());
+
+            Point projectedPoint = (Point) GeometryEngine.project(point, SpatialReferences.getWgs84());
+            mMapView.setViewpointCenterAsync(projectedPoint, 5000);
+            //mMapView.setViewpointGeometryAsync(mCurrentMapExtent);
+
+        } catch (Exception ex) {
+            lat = 40.8876;
+            lon = -72.3853;
+            Point home= new Point(lon,lat, SpatialReferences.getWgs84());
+            mMapView.setViewpointCenterAsync(home,5000);
+
+            Toast.makeText(getActivity(), "Because of incorrect coordinate information this facility could not be mapped.", Toast.LENGTH_LONG).show();
+        } finally    {
+
+        }
+
+        final SimpleMarkerSymbol markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.Style.CIRCLE, 0xFFFF0000, 5);
+        final Graphic inputPointGraphic = new Graphic();
+        inputPointGraphic.setSymbol(markerSymbol);
+
+        graphicsLayer.getGraphics().add(inputPointGraphic);
+        final DecimalFormat decimalFormat = new DecimalFormat("#.00000");
+
+        int color = Color.rgb(255,0,0);
+
+
+        mMapView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                                              @Override
+                                              public void onFocusChange(View v, boolean hasFocus) {
+                                                  String foo = "bar";
+                                              };
+                                          }
+
+        );
+
+
+
+
+
+        mMapView.setOnTouchListener(new DefaultMapViewOnTouchListener(getContext(),mMapView)  {
 
                     private static final long serialVersionUID = 1L;
 
+                    public boolean onTouchEvent(MotionEvent event)  {
+                        return true;
+                    }
+
                     @Override
-                    public void onStatusChanged(Object source, STATUS status) {
+                    public boolean onSingleTapConfirmed(MotionEvent e)  {
 
-                        mMap.setExtent(mCurrentMapExtent);
+                        android.graphics.Point clickedLocation = new android.graphics.Point(Math.round(e.getX()),
+                                Math.round(e.getY()));
+                        Point originalPoint = mMapView.screenToLocation(clickedLocation);
+                        inputPointGraphic.setGeometry(originalPoint);
+                        // project the web mercator point to WGS84 (WKID 4236)
+                        Point projectedPoint = (Point) GeometryEngine.project(originalPoint, SpatialReferences.getWgs84());
 
-                        if (OnStatusChangedListener.STATUS.INITIALIZED == status && source == mMap) {
-                            double lat, lon;
-                            try {
+                        // show the original and projected point coordinates in a callout from the graphic
+                        String ox = decimalFormat.format(originalPoint.getX());
+                        String oy = decimalFormat.format(originalPoint.getY());
+                        String px = decimalFormat.format(projectedPoint.getX());
+                        String py = decimalFormat.format(projectedPoint.getY());
+                        // create a textView for the content of the callout
+                        TextView calloutContent = new TextView(getContext());
+                        calloutContent.setTextColor(Color.BLACK);
+                        calloutContent.setText(String.format("Coordinates\nOriginal: %s, %s\nProjected: %s, %s", ox, oy, px, py));
+                        // create callout
+                        final Callout callout = mMapView.getCallout();
+                        callout.setLocation(originalPoint);
+                        callout.setContent(calloutContent);
+                        callout.show();
 
 
-                                lat = Double.parseDouble(mYouthService.getLat());
-                                lon = Double.parseDouble(mYouthService.getLon());
 
-
-                                MapOptions type = new MapOptions(MapOptions.MapType.STREETS, lat, lon, 18);
-
-                                if (mMapChoice.equals("streets")) {
-                                    type = new MapOptions(MapOptions.MapType.STREETS, lat, lon, 18);
-                                } else if (mMapChoice.equals("topo")) {
-                                    type = new MapOptions(MapType.TOPO, lat, lon, 18);
-                                } else if (mMapChoice.equals("satellite")) {
-                                    type = new MapOptions(MapType.SATELLITE, lat, lon, 18);
-                                } else if (mMapChoice.equals("hybrid")) {
-                                    type = new MapOptions(MapType.HYBRID, lat, lon, 18);
-                                } else if (mMapChoice.equals("natgeo")) {
-                                    type = new MapOptions(MapType.NATIONAL_GEOGRAPHIC, lat, lon, 18);
-                                }
-
-                                mMap.setMapOptions(type);
-
-                                mMap.setScale(50000, false);
-                                mMap.addLayer(graphicsLayer);
-
-                                Point point = GeometryEngine.project(lon, lat, mMap.getSpatialReference());
-
-                                int color = Color.rgb(255,0,0);
-
-                                SimpleMarkerSymbol symbol = new SimpleMarkerSymbol(color, 20, SimpleMarkerSymbol.STYLE.CROSS);
-                                Graphic marker = new Graphic(point, symbol);
-                                graphicsLayer.addGraphic(marker);
-
-                                callout = mMap.getCallout();
-                                callout.hide();
-                                callout.setOffset(0, -3);
-                                callout.setCoordinates(point);
-                                callout.setStyle(R.xml.callout);
-                                callout.setMaxHeight(450);
-                                callout.setMaxWidth(600);
-
-                                TextView tv = new TextView(getActivity());
-                                tv.setMaxWidth(500);
-
-                                String attrs = "";
-
-                                if (!mYouthService.getTitle().equals("NULL"))
-                                    attrs += "Title: " + mYouthService.getTitle() + "\n";
-                                if (!mYouthService.getAddress().equals("NULL"))
-                                    attrs += "Address: " + mYouthService.getAddress() + "\n";
-                                if (!mYouthService.getCategory().equals("NULL"))
-                                    attrs += "Category: " + mYouthService.getCategory() + "\n";
-                                if (!mYouthService.getFee().equals("NULL"))
-                                    attrs += "Fee: " + mYouthService.getFee() + "\n";
-                                if (!mYouthService.getEmail().equals("NULL"))
-                                    attrs += "Email: " + mYouthService.getEmail() + "\n\n";
-                                else attrs += "\n\n";
-
-                                if (!mYouthService.getDesc().equals("NULL"))
-                                    attrs += "Description: " + mYouthService.getDesc() + "\n";
-
-                                tv.setText(
-                                        mYouthService.getF_Name() + "\n"
-                                                + "---------------------------------------------" + "\n"
-                                                + attrs + "\n"
-                                );
-
-                                callout.setContent(tv);
-                                callout.show();
-
-                            } catch (Exception ex) {
-                                lat = 40.8876;
-                                lon = -72.3853;
-                                mMap.setScale(50000, false);
-                                mMap.centerAt(lat, lon, false);
-                                Toast.makeText(getActivity(), "Because of incorrect coordinate information this facility could not be mapped.", Toast.LENGTH_LONG).show();
-                            } finally {
-
-                                mMap.setOnSingleTapListener(new OnSingleTapListener() {
-                                    @Override
-                                    public void onSingleTap(float v, float v1) {
-                                        int [] ids = graphicsLayer.getGraphicIDs(v,v1,10,1);
-
-                                        if(ids != null && ids.length > 0)  {
-                                            if (callout.isShowing()) {
-                                                callout.hide();
-                                            }  else  {
-                                                callout.show();
-                                            }
-                                        }
-                                    }
-                                });
-                            }
-                        }
+                        return super.onSingleTapConfirmed(e);
                     }
 
                 });
@@ -296,6 +316,8 @@ public class YouthServicesFragment extends Fragment {
 
         return v;
     }
+
+
 
     public static YouthServicesFragment newInstance(UUID YouthServiceId) {
         Bundle args = new Bundle();
