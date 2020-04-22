@@ -1,64 +1,39 @@
 package gov.townofsouthamptonny.android.youthservices;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.appcompat.app.AppCompatActivity;
-import android.widget.TextView;
-//import android.support.v4.app.Fragment;
+import android.telecom.Call;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
-import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
-//import com.esri.android.map.Callout;
-import com.esri.android.map.GraphicsLayer;
-import com.esri.android.map.MapOptions;
-
-import com.esri.android.map.MapOptions.MapType;
-//import com.esri.android.map.MapView;
-import com.esri.arcgisruntime.geometry.Envelope;
-import com.esri.arcgisruntime.geometry.Polygon;
-//import com.esri.core.geometry.Polygon;
-
-import com.esri.android.map.event.OnSingleTapListener;
-import com.esri.android.map.event.OnStatusChangedListener;
-
-import com.esri.arcgisruntime.geometry.SpatialReference;
-import com.esri.arcgisruntime.layers.FeatureLayer;
-import com.esri.arcgisruntime.layers.Layer;
-import com.esri.arcgisruntime.layers.RasterLayer;
-//import com.esri.core.geometry.GeometryEngine;
-//import com.esri.core.geometry.Point;
-//import com.esri.core.map.Graphic;
-import com.esri.arcgisruntime.mapping.Viewpoint;
-import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
-import com.esri.arcgisruntime.mapping.view.DefaultSceneViewOnTouchListener;
-//import com.esri.core.symbol.SimpleMarkerSymbol;
-
-import com.esri.arcgisruntime.geometry.SpatialReferences;
-import com.esri.arcgisruntime.mapping.view.MapView;
-import com.esri.arcgisruntime.mapping.view.Callout;
-import com.esri.arcgisruntime.mapping.Basemap;
-import com.esri.arcgisruntime.mapping.ArcGISMap;
 import com.esri.arcgisruntime.geometry.GeometryEngine;
 import com.esri.arcgisruntime.geometry.Point;
 import com.esri.arcgisruntime.geometry.Polygon;
+import com.esri.arcgisruntime.geometry.SpatialReferences;
+import com.esri.arcgisruntime.mapping.ArcGISMap;
+import com.esri.arcgisruntime.mapping.Basemap;
+import com.esri.arcgisruntime.mapping.view.Callout;
+import com.esri.arcgisruntime.mapping.view.Callout.Style.LeaderPosition;
+import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
 import com.esri.arcgisruntime.mapping.view.Graphic;
 import com.esri.arcgisruntime.mapping.view.GraphicsOverlay;
+import com.esri.arcgisruntime.mapping.view.MapView;
 import com.esri.arcgisruntime.symbology.SimpleMarkerSymbol;
 
-
 import java.text.DecimalFormat;
-import java.util.Map;
 import java.util.UUID;
+
+import androidx.fragment.app.Fragment;
+
+
 
 /**
  * Created by JDaly on 2/25/2016.
@@ -97,13 +72,6 @@ public class YouthServicesFragment extends Fragment {
 
     Polygon mCurrentMapExtent = null;
 
-    /*
-    final MapOptions mTopoBasemap      = new MapOptions(MapType.TOPO);
-    final MapOptions mStreetsBasemap   = new MapOptions(MapType.STREETS);
-    final MapOptions mSatelliteBasemap = new MapOptions(MapType.SATELLITE);
-    final MapOptions mHybridBasemap    = new MapOptions(MapType.HYBRID);
-    final MapOptions mNatGeoBasemap    = new MapOptions(MapType.NATIONAL_GEOGRAPHIC);
-     */
 
     private Callbacks mCallbacks;
 
@@ -231,6 +199,7 @@ public class YouthServicesFragment extends Fragment {
         mMapView.getGraphicsOverlays().add(graphicsLayer);
 
         double lat,lon;
+        final DecimalFormat decimalFormat = new DecimalFormat("#.00000");
         try {
 
             lat = Double.parseDouble(mYouthService.getLat());
@@ -240,6 +209,42 @@ public class YouthServicesFragment extends Fragment {
 
             Point projectedPoint = (Point) GeometryEngine.project(point, SpatialReferences.getWgs84());
             mMapView.setViewpointCenterAsync(projectedPoint, 5000);
+
+
+            String attrs = "";
+
+            if (!mYouthService.getTitle().equals("NULL"))
+                attrs += "Title: " + mYouthService.getTitle() + "\n";
+            if (!mYouthService.getAddress().equals("NULL"))
+                attrs += "Address: " + mYouthService.getAddress() + "\n";
+            if (!mYouthService.getCategory().equals("NULL"))
+                attrs += "Category: " + mYouthService.getCategory() + "\n";
+            if (!mYouthService.getFee().equals("NULL"))
+                attrs += "Fee: " + mYouthService.getFee() + "\n";
+            if (!mYouthService.getEmail().equals("NULL"))
+                attrs += "Email: " + mYouthService.getEmail() + "\n\n";
+            else attrs += "\n\n";
+
+            if (!mYouthService.getDesc().equals("NULL"))
+                attrs += "Description: " + mYouthService.getDesc() + "\n";
+
+
+
+            // create a textView for the content of the callout
+            TextView calloutContent = new TextView(getContext());
+            calloutContent.setTextColor(Color.BLACK);
+            calloutContent.setText(
+                    mYouthService.getF_Name() + "\n"
+                            + "---------------------------------------------" + "\n"
+                            + attrs + "\n"
+            );
+
+            // create callout
+            final Callout callout = mMapView.getCallout();
+
+            callout.setLocation(projectedPoint);
+            callout.setContent(calloutContent);
+            callout.show();
 
         } catch (Exception ex) {
             lat = 40.8876;
@@ -252,12 +257,12 @@ public class YouthServicesFragment extends Fragment {
 
         }
 
-        final SimpleMarkerSymbol markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.Style.CIRCLE, 0xFFFF0000, 5);
+        final SimpleMarkerSymbol markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.Style.CROSS, 0xFFFF0000, 8);
         final Graphic inputPointGraphic = new Graphic();
         inputPointGraphic.setSymbol(markerSymbol);
 
         graphicsLayer.getGraphics().add(inputPointGraphic);
-        final DecimalFormat decimalFormat = new DecimalFormat("#.00000");
+
 
         int color = Color.rgb(255,0,0);
 
