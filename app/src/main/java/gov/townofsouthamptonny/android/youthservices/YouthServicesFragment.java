@@ -31,6 +31,7 @@ import com.esri.arcgisruntime.geometry.Polygon;
 import com.esri.android.map.event.OnSingleTapListener;
 import com.esri.android.map.event.OnStatusChangedListener;
 
+import com.esri.arcgisruntime.geometry.SpatialReference;
 import com.esri.arcgisruntime.layers.FeatureLayer;
 import com.esri.arcgisruntime.layers.Layer;
 import com.esri.arcgisruntime.layers.RasterLayer;
@@ -49,6 +50,7 @@ import com.esri.arcgisruntime.mapping.Basemap;
 import com.esri.arcgisruntime.mapping.ArcGISMap;
 import com.esri.arcgisruntime.geometry.GeometryEngine;
 import com.esri.arcgisruntime.geometry.Point;
+import com.esri.arcgisruntime.geometry.Polygon;
 import com.esri.arcgisruntime.mapping.view.Graphic;
 import com.esri.arcgisruntime.mapping.view.GraphicsOverlay;
 import com.esri.arcgisruntime.symbology.SimpleMarkerSymbol;
@@ -222,10 +224,31 @@ public class YouthServicesFragment extends Fragment {
         mMap = new ArcGISMap(Basemap.Type.STREETS, 40.862549,-72.511397,12);
 
         mMapView.setMap(mMap);
-        mMapView.getMap().setReferenceScale(25000.00);
+        mMapView.getMap().setReferenceScale(5000);
         mMapView.getGraphicsOverlays().add(graphicsLayer);
 
-   //     Point point = GeometryEngine.project(lon, lat, mMap.getSpatialReference());
+        double lat,lon;
+        try {
+
+            lat = Double.parseDouble(mYouthService.getLat());
+            lon = Double.parseDouble(mYouthService.getLon());
+
+            Point point = new Point(lon,lat, mMap.getSpatialReference());
+
+            Point projectedPoint = (Point) GeometryEngine.project(point, SpatialReferences.getWgs84());
+            mMapView.setViewpointCenterAsync(projectedPoint, 5000);
+            //mMapView.setViewpointGeometryAsync(mCurrentMapExtent);
+
+        } catch (Exception ex) {
+            lat = 40.8876;
+            lon = -72.3853;
+            Point home= new Point(lon,lat, SpatialReferences.getWgs84());
+            mMapView.setViewpointCenterAsync(home,5000);
+
+            Toast.makeText(getActivity(), "Because of incorrect coordinate information this facility could not be mapped.", Toast.LENGTH_LONG).show();
+        } finally    {
+
+        }
 
         final SimpleMarkerSymbol markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.Style.CIRCLE, 0xFFFF0000, 5);
         final Graphic inputPointGraphic = new Graphic();
@@ -237,6 +260,15 @@ public class YouthServicesFragment extends Fragment {
         int color = Color.rgb(255,0,0);
 
 
+        mMapView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                                              @Override
+                                              public void onFocusChange(View v, boolean hasFocus) {
+                                                  String foo = "bar";
+                                              };
+                                          }
+
+        );
+
 
 
 
@@ -246,7 +278,6 @@ public class YouthServicesFragment extends Fragment {
                     private static final long serialVersionUID = 1L;
 
                     public boolean onTouchEvent(MotionEvent event)  {
-                        String foo = "bar";
                         return true;
                     }
 
@@ -274,6 +305,7 @@ public class YouthServicesFragment extends Fragment {
                         callout.setLocation(originalPoint);
                         callout.setContent(calloutContent);
                         callout.show();
+
 
 
                         return super.onSingleTapConfirmed(e);
