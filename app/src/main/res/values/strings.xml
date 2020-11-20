@@ -3,6 +3,12 @@
     <string name="hotline_info">Hotline Info</string>
     <string name="calendar_info">Calendar Info</string>
     <string name="show_subtitle">Show</string>
+    <string name="service">Service:</string>
+    <string name="town">Town:</string>
+    <string name="todo1">TODO1</string>
+    <string name="todo2">TODO2</string>
+    <string name="todo3">TODO3</string>
+    <string name="todo4">TODO4</string>
 
     <string-array name="hotlines_array">
         <item>Response of Suffolk County (crisis counseling and referrrals)\n\tHotline: <a href="tel:6317517500">631-751-7500</a>\n\tHear2Help (online): <a href="http://www.responsehotline.org">www.responsehotline.org</a>\n\tConexion (Spanish): <a href="tel:6317517423">631-751-7423</a></item>

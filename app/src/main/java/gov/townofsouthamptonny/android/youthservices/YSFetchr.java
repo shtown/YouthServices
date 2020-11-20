@@ -72,7 +72,7 @@ public class YSFetchr {
         } catch(JSONException je) {
             //Log.e(TAG, "Failed to parse JSON", je);
         } catch (IOException ioe)  {
-            //Log.e(TAG, "Failed to fetch items", ioe);
+            Log.e(TAG, "Failed to fetch items", ioe);
         }
         return items;
     }

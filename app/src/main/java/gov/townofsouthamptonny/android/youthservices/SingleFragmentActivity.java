@@ -32,7 +32,7 @@ public abstract class  SingleFragmentActivity extends AppCompatActivity {
 
         try {
             ArcGISRuntimeEnvironment.setLicense("runtimelite,1000,rud#########,day-month-year,####################");
-         //   ArcGISRuntime.setClientId("hOGiF4ClbCUbiQcJ");
+            //ArcGISRuntime.setClientId("hOGiF4ClbCUbiQcJ");
         }
         catch (Exception ex)
         {

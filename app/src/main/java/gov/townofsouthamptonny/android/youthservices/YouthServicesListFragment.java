@@ -45,6 +45,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -87,18 +88,18 @@ public class  YouthServicesListFragment extends Fragment  {
         void onYouthServiceSelected(ServicesItem item);
     }
 
-    //@Override
-    //public void onAttach(Activity activity) {
-    //    super.onAttach(activity);
-    //    mCallbacks = (Callbacks) activity;
-    //}
-
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        Activity activity = getActivity();
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
         mCallbacks = (Callbacks) activity;
     }
+
+    //@Override
+    //public void onAttach(Context context) {
+    //    super.onAttach(context);
+    //    Activity activity = getActivity();
+     //   mCallbacks = (Callbacks) activity;
+    //}
 
     @Override
     public void onDetach()  {
@@ -455,7 +456,7 @@ public class  YouthServicesListFragment extends Fragment  {
     public void onResume()  {
         super.onResume();
 
-        int errorCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getContext());
+        int errorCode = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(getActivity());
 
         if(errorCode != ConnectionResult.SUCCESS)  {
             Dialog erroDialog = GooglePlayServicesUtil
@@ -470,6 +471,7 @@ public class  YouthServicesListFragment extends Fragment  {
         }
         updateUI();
     }
+
 
     public void getLocationServicesClient()  {
 
@@ -689,7 +691,7 @@ public class  YouthServicesListFragment extends Fragment  {
         mYouthServicesRecyclerView = (RecyclerView) view.findViewById(R.id.ys_recycler_view);
         mYouthServicesRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        updateUI();
+        //updateUI();
         return view;
     }
 
