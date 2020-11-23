@@ -60,7 +60,6 @@
             android:layout_below="@+id/list_item_ys_phone_text_view"
             tools:text="Fee" />
 
-
         <ImageView
             android:id="@+id/list_http"
             android:layout_width="40dp"
@@ -76,7 +75,7 @@
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="20dp"
             android:layout_toStartOf="@+id/list_item_ys_dist_text_view"
             android:src="@drawable/ic_email_black_24dp"
             android:contentDescription="@string/todo2" />
@@ -87,7 +86,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="80dp"
             android:layout_toStartOf="@+id/list_directions"
             android:layout_toLeftOf="@+id/list_directions"
             android:src="@drawable/ic_perm_phone_msg_black_24dp"
@@ -100,7 +99,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="40dp"
             android:src="@drawable/ic_directions_car_black_24dp"
             android:contentDescription="@string/todo4" />
     </RelativeLayout>
