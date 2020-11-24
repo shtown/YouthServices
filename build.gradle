@@ -25,7 +25,7 @@ allprojects {
     repositories {
         jcenter()
         maven {
-            url 'https://esri.bintray.com/arcgis'
+            url 'https://esri.jfrog.io/artifactory/arcgis'
         }
         google()
     }
