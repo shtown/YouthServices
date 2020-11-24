@@ -477,6 +477,10 @@ public class  YouthServicesListFragment extends Fragment  {
 
     public void getLocationServicesClient()  {
 
+        FusedLocationProviderClient fusedLocationProviderClient; //Global variable
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
+
+
         mClient = new GoogleApiClient.Builder(getActivity())
                 .addApi(LocationServices.API)
                 .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
@@ -544,8 +548,7 @@ public class  YouthServicesListFragment extends Fragment  {
 
                     @Override
                     public void onConnectionSuspended(int i)  {
-                        //Toast.makeText(getActivity(), "on connection suspended", Toast.LENGTH_SHORT).show();
-                        ////Log.d(TAG, "Connection Suspended");
+                        Toast.makeText(getActivity(), "Connection Suspended.  Please check Network Setttings", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .build();
