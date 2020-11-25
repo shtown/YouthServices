@@ -192,9 +192,14 @@ public class  YouthServicesListFragment extends Fragment  {
                     String telformat = telno.replaceAll("[^0-9]", "");
                     telformat = "tel:" + telformat;
 
-                    Uri number = Uri.parse(telformat);
-                    Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
-                    startActivity(callIntent);
+                    try {
+                        Uri number = Uri.parse(telformat);
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
+                        startActivity(callIntent);
+                    } catch (android.content.ActivityNotFoundException ex) {
+                        Toast.makeText(getActivity(), "Unable to retrieve phone information", Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             });
 
@@ -203,9 +208,15 @@ public class  YouthServicesListFragment extends Fragment  {
                 @Override
                 public void onClick(View v) {
 
-                    Uri link = Uri.parse(webpage);
-                    Intent callIntent = new Intent(Intent.ACTION_VIEW, link);
-                    startActivity(callIntent);
+                    try {
+                        Uri link = Uri.parse(webpage);
+                        Intent callIntent = new Intent(Intent.ACTION_VIEW, link);
+                        startActivity(callIntent);
+                    } catch (android.content.ActivityNotFoundException ex) {
+                        Toast.makeText(getActivity(), "Web page not found for this location", Toast.LENGTH_SHORT).show();
+                    }
+
+
                 }
             });
 
@@ -525,9 +536,8 @@ public class  YouthServicesListFragment extends Fragment  {
                                                 ////Log.d(TAG, "LocationChanged() lat: " + Double.toString(lat) + " lon:" + Double.toString(lon) + " distance: " + Float.toString(distance[0]) + " miles: " + Double.toString(meters2miles));
                                                 item.setDistFromCenter(meters2miles);
                                             } catch (Exception e) {
-
+                                                //Toast.makeText(getActivity(), "Cannot retrieve coordinates for this location", Toast.LENGTH_SHORT).show();
                                             }
-
                                         }
 
                                         Collections.sort(mItems, new Comparator<ServicesItem>() {
