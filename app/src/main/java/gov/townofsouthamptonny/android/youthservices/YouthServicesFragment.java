@@ -241,7 +241,7 @@ public class YouthServicesFragment extends Fragment {
             );
 
             // create callout
-            callout = mMapView.getCallout();
+            final Callout callout = mMapView.getCallout();
 
             callout.setLocation(projectedPoint);
             callout.setContent(calloutContent);
@@ -273,7 +273,9 @@ public class YouthServicesFragment extends Fragment {
         );
 
 
-        Point finalProjectedPoint = projectedPoint;
+
+
+
         mMapView.setOnTouchListener(new DefaultMapViewOnTouchListener(getContext(),mMapView)  {
 
                     private static final long serialVersionUID = 1L;
@@ -284,13 +286,30 @@ public class YouthServicesFragment extends Fragment {
 
                     @Override
                     public boolean onSingleTapConfirmed(MotionEvent e)  {
-                        if (callout.isShowing()) {
-                            callout.dismiss();
-                        }
-                        else {
-                            callout.show();
-                        }
-                        mMapView.setViewpointCenterAsync(finalProjectedPoint);
+
+                        android.graphics.Point clickedLocation = new android.graphics.Point(Math.round(e.getX()),
+                                Math.round(e.getY()));
+                        Point originalPoint = mMapView.screenToLocation(clickedLocation);
+                        pointGraphic.setGeometry(originalPoint);
+                        // project the web mercator point to WGS84 (WKID 4236)
+                        Point projectedPoint = (Point) GeometryEngine.project(originalPoint, SpatialReferences.getWgs84());
+
+                        // show the original and projected point coordinates in a callout from the graphic
+                        String ox = decimalFormat.format(originalPoint.getX());
+                        String oy = decimalFormat.format(originalPoint.getY());
+                        String px = decimalFormat.format(projectedPoint.getX());
+                        String py = decimalFormat.format(projectedPoint.getY());
+                        // create a textView for the content of the callout
+                        TextView calloutContent = new TextView(getContext());
+                        calloutContent.setTextColor(Color.BLACK);
+                        calloutContent.setText(String.format("Coordinates\nOriginal: %s, %s\nProjected: %s, %s", ox, oy, px, py));
+                        // create callout
+                        final Callout callout = mMapView.getCallout();
+                        callout.setLocation(originalPoint);
+                        callout.setContent(calloutContent);
+                        callout.show();
+
+
 
                         return super.onSingleTapConfirmed(e);
                     }
