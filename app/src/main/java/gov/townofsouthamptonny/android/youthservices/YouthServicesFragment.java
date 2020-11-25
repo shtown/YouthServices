@@ -26,7 +26,6 @@ import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
 import com.esri.arcgisruntime.mapping.view.Graphic;
 import com.esri.arcgisruntime.mapping.view.GraphicsOverlay;
 import com.esri.arcgisruntime.mapping.view.MapView;
-import com.esri.arcgisruntime.symbology.SimpleLineSymbol;
 import com.esri.arcgisruntime.symbology.SimpleMarkerSymbol;
 
 import java.text.DecimalFormat;
@@ -190,7 +189,7 @@ public class YouthServicesFragment extends Fragment {
 
         final View v = inflater.inflate(R.layout.fragment_ys, container, false);
         int mCalloutShown = 1;
-        Point projectedPoint = null;
+
         mMapView = (MapView) v.findViewById(R.id.map);
           GraphicsOverlay graphicsLayer = new GraphicsOverlay();
         mMap = new ArcGISMap(Basemap.Type.STREETS, 40.862549,-72.511397,12);
@@ -208,7 +207,7 @@ public class YouthServicesFragment extends Fragment {
 
             Point point = new Point(lon,lat, mMap.getSpatialReference());
 
-            projectedPoint = (Point) GeometryEngine.project(point, SpatialReferences.getWgs84());
+            Point projectedPoint = (Point) GeometryEngine.project(point, SpatialReferences.getWgs84());
             mMapView.setViewpointCenterAsync(projectedPoint, 5000);
 
 
@@ -258,10 +257,15 @@ public class YouthServicesFragment extends Fragment {
 
         }
 
-        final SimpleMarkerSymbol markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.Style.CIRCLE, Color.rgb(226,119,40), 20.0f);
-        markerSymbol.setOutline(new SimpleLineSymbol(SimpleLineSymbol.Style.SOLID, Color.BLUE, 2.0f));
-        Graphic pointGraphic = new Graphic(projectedPoint, markerSymbol);
-        graphicsLayer.getGraphics().add(pointGraphic);
+        final SimpleMarkerSymbol markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.Style.CROSS, 0xFFFF0000, 8);
+        final Graphic inputPointGraphic = new Graphic();
+        inputPointGraphic.setSymbol(markerSymbol);
+
+        graphicsLayer.getGraphics().add(inputPointGraphic);
+
+
+        int color = Color.rgb(255,0,0);
+
 
         mMapView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                                               @Override
@@ -290,7 +294,7 @@ public class YouthServicesFragment extends Fragment {
                         android.graphics.Point clickedLocation = new android.graphics.Point(Math.round(e.getX()),
                                 Math.round(e.getY()));
                         Point originalPoint = mMapView.screenToLocation(clickedLocation);
-                        pointGraphic.setGeometry(originalPoint);
+                        inputPointGraphic.setGeometry(originalPoint);
                         // project the web mercator point to WGS84 (WKID 4236)
                         Point projectedPoint = (Point) GeometryEngine.project(originalPoint, SpatialReferences.getWgs84());
 
